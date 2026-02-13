@@ -1,0 +1,48 @@
+---
+import SectionHeader from "@/components/elements/SectionHeader.astro";
+import experiences from "@/collections/experiences.json";
+import AboutExperience from "@/components/elements/AboutExperience.astro";
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {title, description
+} = Astro.props;
+
+---
+<section class="py-8 sm:py-12 md:py-16 md:pb-12 site-container">
+    <div class="space-y-6 sm:space-y-8 md:space-y-8">
+      <SectionHeader title={title} description={description}/>
+    </div>
+    <div class="experience">
+        <div
+        class="px-5 py-10"
+        data-aos="fade-up-xs"
+        data-aos-delay="100"
+        data-aos-duration="600"
+        data-aos-once="true"
+        >
+        {
+            experiences.map((experience, index) => {
+            return (
+                <div
+                class="pb-10 border-l border-dashed border-gray-200 last:border-l-0 dark:border-neutral-500"
+                data-aos="fade-up-xs"
+                data-aos-delay={200 + (index * 100)}
+                data-aos-duration="500"
+                data-aos-once="true"
+                >
+                <AboutExperience
+                    dates={experience.dates}
+                    role={experience.role}
+                    company={experience.company}
+                    description={experience.description}
+                    logo={experience.logo}
+                />
+                </div>
+            )
+            })
+        }
+        </div>
+    </div>
+</section>
