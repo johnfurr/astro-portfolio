@@ -1,17 +1,36 @@
 [
 	{
-		"dates": "June 2018 · Present",
+		"dates": "May 2019 · Present",
 		"role": "Web & Product Designer",
-		"company": "Company Name",
+		"company": "Freelance",
 		"description": "Leading the design of user-centric web applications and dating platforms.",
-		"logo": "/assets/experiences/company.jpg"
+		"logo": "/assets/glitch-logo.svg"
+	},{
+		"dates": "Oct 2022 · Aug 2025",
+		"role": "Web & Product Designer",
+		"company": "Dogwood Media Solutions",
+		"description": "Leading the design of user-centric web applications and dating platforms.",
+		"logo": "/assets/experiences/dogwood-logo.png"
 	},
 	{
-		"dates": "July 2016 · June 2017",
+		"dates": "Jul 2013 · May 2019",
 		"role": "Web & Product Designer",
-		"company": "Company Name",
+		"company": "Stamp Idea Group",
 		"description": "Spearheaded the design and development of e-commerce websites and online marketplaces.",
-		"logo": "/assets/experiences/company.jpg"
+		"logo": "/assets/experiences/stamp-logo.png"
+	},
+	{
+		"dates": "Jun 2012 · Aug 2012",
+		"role": "Web & Creative Intern",
+		"company": "LWT",
+		"description": "Spearheaded the design and development of e-commerce websites and online marketplaces.",
+		"logo": "/assets/experiences/lwt-logo.png"
+	},
+	{
+		"dates": "Aug 2009 · June 2013",
+		"role": "Web & Creative Intern",
+		"company": "Memphis College of Art",
+		"description": "Spearheaded the design and development of e-commerce websites and online marketplaces.",
+		"logo": "/assets/experiences/mca-logo.png"
 	}
-
 ]
