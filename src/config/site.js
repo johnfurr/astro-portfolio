@@ -18,8 +18,7 @@ export const siteConfig = {
 		title: "John Furr",
 		description: "I'm John, a web developer and designer",
 		keywords: "web developer, web designer, portfolio, design, code, personal website",
-		image: `${SITE_URL}/og.jpg`,
-		twitterHandle: "ricouii",
+		image: `${SITE_URL}/sute.jpg`,
 	},
 	// social links
 	social:{
