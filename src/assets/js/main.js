@@ -1,7 +1,7 @@
 // Add your javascript here
 import AOS from 'aos';
 
-window.darkMode = false;
+window.darkMode = true;
 
 const stickyClasses = [];
 const unstickyClasses = [];
@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	evaluateHeaderPosition();
 	mobileMenuFunctionality();
 
-	// 初始化 AOS
 	AOS.init({
 		duration: 400,
 		easing: 'ease-out-cubic',
@@ -49,17 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		delay: 0,
 	});
 });
-
-// window.toggleDarkMode = function(){
-//     document.documentElement.classList.toggle('dark');
-//     if(document.documentElement.classList.contains('dark')){
-//         localStorage.setItem('dark_mode', true);
-//         window.darkMode = true;
-//     } else {
-//         window.darkMode = false;
-//         localStorage.setItem('dark_mode', false);
-//     }
-// }
 
 window.stickyHeaderFuncionality = () => {
 	window.addEventListener("scroll", () => {

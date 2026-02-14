@@ -1,13 +1,21 @@
 ---
+import {
+  Accessibility,
+  Camera,
+  LayoutTemplate,
+  FolderKanban,
+	Code,
+	Globe,
+	Palette,
+	Smartphone,
+} from "@lucide/astro";
+import SectionHeader from "@/components/elements/SectionHeader.astro";
 import Button from "../components/ui/Button.astro";
 import { siteConfig } from "@/config/site";
 import HeroCard from "@/components/home/HeroCard.astro";
 import Layout from "@/layouts/Layout.astro";
 import FeaturedWork from "../components/sections/FeaturedWork.astro";
-import BlogSection from "@/components/sections/BlogSection.astro";
-import SocialCard from "@/components/cards/SocialCard.astro";
 import AnimatedText from "@/components/ui/AnimatedText.astro";
-import Explore from "@/components/sections/Explore.astro";
 import Resume from "@/components/sections/Resume.astro";
 ---
 
@@ -93,6 +101,96 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
     data-aos-once="true"
   >
     <Resume title="Resume ↓"  />
+  </section>
+
+
+
+  <section class="site-container">
+    <div class="w-full border-b-1 border-dashed border-b-neutral-200 dark:border-b-neutral-700 mt-4 mb-8"></div>
+      <div class="space-y-6 sm:space-y-8 md:space-y-8">
+      <SectionHeader title="Expertise ↓">
+    </div>
+      <div
+        class="list flex flex-wrap gap-3 mt-4 mb-12 w-full items-center justify-start"
+        data-aos="fade-up-xs"
+        data-aos-delay="100"
+        data-aos-duration="600"
+        data-aos-once="true"
+      >
+        <!-- Product Design -->
+        <div class="item flex justify-start items-start flex-grow-0 flex-shrink-0 overflow-hidden gap-2 px-5 py-4 rounded-xl  bg-gradient-to-b from-[f7f8f0] to-[#f1f2f9]  dark:from-gray-900 dark:to-gray-800 dark:text-neutral-200 ">
+          <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-2">
+            <Palette size={22} />
+            <div class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-700 dark:text-neutral-200">
+              Graphic Design
+            </div>
+          </div>
+        </div>
+        <!-- Website Design -->
+        <div class="item flex justify-start items-start flex-grow-0 flex-shrink-0 overflow-hidden gap-2 px-5 py-4  rounded-xl  bg-gradient-to-b from-[f7f8f0] to-[#f1f2f9]  dark:from-gray-900 dark:to-gray-800">
+          <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-2">
+            <Globe size={22} />
+            <div class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-700 dark:text-neutral-200">
+              Website Design
+            </div>
+          </div>
+        </div>
+        <!-- Development -->
+        <div class="item flex justify-start items-start flex-grow-0 flex-shrink-0 overflow-hidden gap-2 px-5 py-4  rounded-xl  bg-gradient-to-b from-[f7f8f0] to-[#f1f2f9]  dark:from-gray-900 dark:to-gray-800">
+          <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-2">
+            <Code size={22} />
+            <div class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-700 dark:text-neutral-200">
+              Development
+            </div>
+          </div>
+        </div>
+        <!-- Accessibility -->
+        <div class="item flex justify-start items-start flex-grow-0 flex-shrink-0 overflow-hidden gap-2 px-5 py-4 rounded-xl  bg-gradient-to-b from-[f7f8f0] to-[#f1f2f9]  dark:from-gray-900 dark:to-gray-800 dark:text-neutral-200 ">
+          <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-2">
+            <Accessibility size={22} />
+            <div class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-700 dark:text-neutral-200">
+              Accessibility
+            </div>
+          </div>
+        </div>
+        <!-- UI/UX Design -->
+        <div class="item flex justify-start items-start flex-grow-0 flex-shrink-0 overflow-hidden gap-2 px-5 py-4  rounded-xl  bg-gradient-to-b from-[f7f8f0] to-[#f1f2f9]  dark:from-gray-900 dark:to-gray-800">
+          <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-2">
+            <Smartphone size={22} />
+            <div class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-700 dark:text-neutral-200">
+              UI/UX Design
+            </div>
+          </div>
+        </div>
+        <!-- Photography -->
+        <div class="item flex justify-start items-start flex-grow-0 flex-shrink-0 overflow-hidden gap-2 px-5 py-4  rounded-xl  bg-gradient-to-b from-[f7f8f0] to-[#f1f2f9]  dark:from-gray-900 dark:to-gray-800">
+          <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-2">
+            <Camera size={22} />
+            <div class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-700 dark:text-neutral-200">
+              Photography
+            </div>
+          </div>
+        </div>
+        <!-- Wireframe -->
+        <div class="item flex justify-start items-start flex-grow-0 flex-shrink-0 overflow-hidden gap-2 px-5 py-4  rounded-xl  bg-gradient-to-b from-[f7f8f0] to-[#f1f2f9]  dark:from-gray-900 dark:to-gray-800">
+          <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-2">
+            <LayoutTemplate size={22} />
+            <div class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-700 dark:text-neutral-200">
+              Wireframing
+            </div>
+          </div>
+        </div>
+        <!-- Project Managment -->
+        <div class="item flex justify-start items-start flex-grow-0 flex-shrink-0 overflow-hidden gap-2 px-5 py-4  rounded-xl  bg-gradient-to-b from-[f7f8f0] to-[#f1f2f9]  dark:from-gray-900 dark:to-gray-800">
+          <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 gap-2">
+            <FolderKanban size={22} />
+            <div class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-neutral-700 dark:text-neutral-200">
+              Project Management
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full border-b-1 border-dashed border-b-neutral-200 dark:border-b-neutral-700 mt-4 mb-8"></div>
   </section>
 
   <section
