@@ -146,7 +146,7 @@ const videoId = `workcard-video-${index}-${name.replace(/[^a-z0-9]+/gi, '-').toL
     {description && (
       <p class:list={[
         "text-neutral-600 dark:text-neutral-400 leading-relaxed",
-        layout === 'featured' ? "text-base md:text-lg line-clamp-2" : "text-sm line-clamp-2"
+        layout === 'featured' ? "text-base md:text-lg" : "text-sm"
       ]}>
         {description}
       </p>

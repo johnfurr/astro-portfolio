@@ -1,8 +1,8 @@
 [
 	{
-		"name": "Meals on Wheels Montgomery AL Metro Area",
-		"description": "Lorem Ipsum",
-		"tags": ["Squarespace", "AdobeXD"],
+		"name": "Meals on Wheels Montgomery AL",
+		"description": "A project dear to me, as I've volunteered with Meals on Wheels for years. Was given the opportunity to save the site from a poorly made Squarespace by another agency. Wireframed and designed a look in AdobeXD before developing. I used a 7.0 template as a base to enable developer mode to give me access a git respository of the site's code for further cutomization. I also went through a redesign with this site when the organization rebranded. ",
+		"tags": ["Freelance", "Squarespace", "AdobeXD", "LESS"],
 		"image": "/assets/works/mowmama.jpg",
 		"video": "/assets/works/mowmama.mp4",
 		"url": "https://mowmama.com/",
@@ -10,16 +10,16 @@
 	},
 	{
 		"name": "Sturbridge HOA",
-		"description": "Lorem Ipsum",
-		"tags": ["Figma","Wordpress"],
+		"description": "This was my first site both designing in Figma and also handing off the design another developer to work with. It was an interesting learning experience to oversee the development process from my initial designs. Also had access to plenty of high quality video and photo assets to work with.",
+		"tags": ["Agency", "Figma","Wordpress"],
 		"image": "/assets/works/sturbridge.jpg",
 		"video": "/assets/works/sturbridge.mp4",
 		"url": "https://gradientshub.com"
 	},
 	{
 		"name": "Poppy Games",
-		"description": "Lorem Ipsum",
-		"tags": ["Company","Website","Branding"],
+		"description": "A branding and web challegne for a friend's kickstarter project. Created the logo for the game company, and brought the design to life with motion and interactive elements.",
+		"tags": ["Freelance", "Static","Branding"],
 		"image": "/assets/works/poppygames.jpg",
 		"video": "/assets/works/poppygames.mp4",
 		"url": "https://poppy-games.com/"
