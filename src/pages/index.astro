@@ -8,6 +8,7 @@ import {
 	Globe,
 	Palette,
 	Smartphone,
+  Download,
 } from "@lucide/astro";
 import SectionHeader from "@/components/elements/SectionHeader.astro";
 import Button from "../components/ui/Button.astro";
@@ -202,5 +203,33 @@ keywords="Rico, Portfolio, Web Design, UI Design, Frontend Development, Creative
   >
     <FeaturedWork title="Past Projects ↓" description="Most of my recent work has been under NDA, but here a few select past projects of mine." limit={5} />
   </section>
-
+  
+  <div class="site-container">
+    <div class="w-full border-b-1 border-dashed border-b-gray-200 dark:border-b-neutral-700 mt-4 mb-8"></div>
+    <section>
+      <h2
+        id="lets-connect"
+        class="mt-12 mb-4 text-[28px] text-neutral-800  dark:text-neutral-200 font-brand"
+        data-aos="fade-up-xs"
+        data-aos-duration="500"
+        data-aos-once="true"
+      >Let's Connect</h2>
+      <p
+        class="text-sm leading-6 text-neutral-700 dark:text-neutral-300"
+        data-aos="fade-up-xs"
+        data-aos-delay="100"
+        data-aos-duration="500"
+        data-aos-once="true"
+      >
+        If you're interested in working with me please feel free <a
+          href={siteConfig.social.linkedin}
+          target="_blank"
+          class="text-indigo-500 underline">contact me on Linkedin</a
+        >, or download my resume: 
+        <Button url={siteConfig.resume} type="fill" className="md:inline-flex mx-1">
+          Resume <Download size={16} />
+        </Button>
+      </p>
+    </section>
+  </div>
 </Layout>
